@@ -9,6 +9,7 @@
     <script defer src="Scripts/mobileNavbar.js"></script>
     <script defer src="Scripts/slider.js"></script>
     <script defer src="Scripts/dropdown.js"></script>
+    <script defer src="Scripts/cardSlider.js"></script>
 
 </head>
 <body>
@@ -201,6 +202,83 @@
             </div>
         </section>
     </div>
+
+    <div class="slider-container">
+        <div class="card">
+          <img src="Photos/combo.png" alt="Imagem 1">
+          <div class="card-content">
+            <h3>Combo</h3>
+            <form>
+                <label><input type="radio" name="glamcombo" checked> Anual R$122,80 / mês</label>
+                <label><input type="radio" name="glamcombo"> Semestral R$138,80 / mês</label>
+                <label><input type="radio" name="glamcombo"> Mensal R$148,80 / mês</label>
+            </form>
+            <ul>
+                <li>• Todo mês uma box e bag temática com 8 a 11 produtos com valor +R$340</li>
+                <li>• Ganhe 100 beautypoints ao assinar</li>
+            </ul>
+            <button onclick="showDetails('glamcombo')">Detalhes do plano</button>
+            <button class="subscribe-button">Quero assinar a beautycombo</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="Photos/box.png" alt="Imagem 2">
+          <div class="card-content">
+            <h3>Box</h3>
+            <form>
+                <label><input type="radio" name="glambox" checked> Anual R$79,90 / mês</label>
+                <label><input type="radio" name="glambox"> Semestral R$89,90 / mês</label>
+                <label><input type="radio" name="glambox"> Mensal R$94,90 / mês</label>
+            </form>
+            <ul>
+                <li>• Todo mês uma box temática com 5 a 7 produtos com valor +R$240</li>
+                <li>• Ganhe 75 beautypoints ao assinar</li>
+            </ul>
+            <button onclick="showDetails('glambox')">Detalhes do plano</button>
+            <button class="subscribe-button">Quero assinar a beautybox</button>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img src="Photos/bag.png" alt="Imagem 3">
+          <div class="card-content">
+            <h3>Bag</h3>
+            <form>
+                <label><input type="radio" name="glambag" checked> Anual R$42,90 / mês</label>
+                <label><input type="radio" name="glambag"> Semestral R$48,90 / mês</label>
+                <label><input type="radio" name="glambag"> Mensal R$53,90 / mês</label>
+            </form>
+            <ul>
+                <li>• Todo mês uma bag temática com 3 a 4 produtos com valor +R$100</li>
+                <li>• Ganhe 60 beautypoints ao assinar</li>
+            </ul>
+            <button onclick="showDetails('glambag')">Detalhes do plano</button>
+            <button class="subscribe-button">Quero assinar a beautybag</button>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img src="Photos/pass.png" alt="Imagem 4">
+          <div class="card-content">
+            <h3>Pass</h3>
+            <form>
+                <label><input type="radio" name="glampass" checked> Mensal R$14,90 / mês</label>
+                <label><input type="radio" name="glampass"> Semestral R$12,90 / mês</label>
+                <label><input type="radio" name="glampass"> Anual R$9,90 / mês</label>
+            </form>
+            <ul>
+                <li>• Acesso a todos os benefícios do clube</li>
+                <li>• Opção de comprar a parte box, bag ou combo</li>
+                <li>• Ganhe 10 beautypoints ao assinar</li>
+            </ul>
+            <button onclick="showDetails('glampass')">Detalhes do plano</button>
+            <button class="subscribe-button">Quero assinar a beautypass</button>
+          </div>
+        </div>
+      
+        <!-- Adicione mais cards conforme necessário -->
+      </div>    
 
 <footer>
     <div class="container">

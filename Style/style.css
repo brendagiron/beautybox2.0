@@ -355,6 +355,92 @@ section.slider {
 }
 /*END COMO-FUNCIONA*/
 
+/*CARD-SLIDER*/
+
+.slider-container {
+    display: flex;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    scroll-snap-type: x mandatory; /* Garante que os cards parem alinhados */
+  }
+  
+.card {
+    flex: 0 0 auto; /* Impede que os cards se expandam */
+    width: 300px; /* Largura dos cards */
+    margin-right: 20px; /* Espaçamento entre os cards */
+    scroll-snap-align: start; /* Alinha os cards no início da viewport */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem não saia do card */
+    background: #f09dae;
+}
+
+  
+ .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+.card-content {
+    padding: 15px;
+}
+  
+.card-content h3 {
+    margin-top: -50px;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #333;
+    
+}
+
+  .card-content ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.card-content ul li {
+    margin: 0;
+    color: #FFF;
+}
+  
+.card-content button {
+    background-color: #ff007f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    background-color: #e6006f;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffeded;
+    cursor: pointer;
+}
+
+form label input {
+    margin-right: 10px;
+}
+
+form label input:checked + span {
+    background-color: #ff007f;
+    color: #fff;
+}
+
+/*END-CARD-SLIDER*/
+
 /*FOOTER*/
 footer {
     background-color: #333;
