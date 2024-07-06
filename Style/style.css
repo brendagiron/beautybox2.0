@@ -255,7 +255,6 @@ section.slider {
 /*COMO-FUNCIONA*/
 @media (max-width: 768px) {
     .como-funciona {
-        width: 100%;
         padding: 20px;
         text-align: center;
         margin: 0 auto;
@@ -407,3 +406,102 @@ footer .container ul li a {
 
 }
 /*END-FOOTER*/
+
+
+/*PÁGINA DE PRODUTOS*/
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    margin: 16px;
+    padding: 16px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.product-card img {
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.product-info h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.product-info .price {
+    margin-bottom: 8px;
+}
+
+.product-info .price p {
+    margin: 4px 0;
+}
+
+.rating {
+    top: 8px;
+    left: 8px;
+    background-color: #ffa500; 
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.club-price {
+    color: green;
+    font-weight: bold;
+}
+
+.regular-price {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.discount {
+    color: red;
+    font-weight: bold;
+}
+
+.buy-button {
+    background-color: #ff1493; /* Pink */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 1024px) {
+    .product-table {
+        display: block;
+    }
+
+    .product-card {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+/*END PÁGINA DE PRODUTOS*/
