@@ -693,6 +693,67 @@ section.slider {
 }
 /*END-ABOUT-US*/
 
+/*CONTACT*/
+.contact {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.contact-card p {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff1493;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #ff459e;
+}
+
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 60%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+}
+
+/*END-CONTACT*/
+
 /*SIGN-UP*/
 .signup {
     background-color: #FFD3E0;
