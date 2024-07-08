@@ -203,82 +203,271 @@
         </section>
     </div>
 
-    <div class="slider-container">
-        <div class="card">
-          <img src="Photos/combo.png" alt="Imagem 1">
-          <div class="card-content">
-            <h3>Combo</h3>
-            <form>
-                <label><input type="radio" name="glamcombo" checked> Anual R$122,80 / mês</label>
-                <label><input type="radio" name="glamcombo"> Semestral R$138,80 / mês</label>
-                <label><input type="radio" name="glamcombo"> Mensal R$148,80 / mês</label>
-            </form>
-            <ul>
-                <li>• Todo mês uma box e bag temática com 8 a 11 produtos com valor +R$340</li>
-                <li>• Ganhe 100 beautypoints ao assinar</li>
-            </ul>
-            <button onclick="showDetails('glamcombo')">Detalhes do plano</button>
-            <button class="subscribe-button">Quero assinar a beautycombo</button>
-          </div>
-        </div>
-      
-        <div class="card">
-          <img src="Photos/box.png" alt="Imagem 2">
-          <div class="card-content">
-            <h3>Box</h3>
-            <form>
-                <label><input type="radio" name="glambox" checked> Anual R$79,90 / mês</label>
-                <label><input type="radio" name="glambox"> Semestral R$89,90 / mês</label>
-                <label><input type="radio" name="glambox"> Mensal R$94,90 / mês</label>
-            </form>
-            <ul>
-                <li>• Todo mês uma box temática com 5 a 7 produtos com valor +R$240</li>
-                <li>• Ganhe 75 beautypoints ao assinar</li>
-            </ul>
-            <button onclick="showDetails('glambox')">Detalhes do plano</button>
-            <button class="subscribe-button">Quero assinar a beautybox</button>
-          </div>
-        </div>
+<div class="subscription-plans-container container">
+    <p class="titulo"> Assine e aproveite o preço clube! </p>
+    <div id="carousel" class="subscription-plans-container__carousel b4acarouselAqb2Bi">
     
-        <div class="card">
-          <img src="Photos/bag.png" alt="Imagem 3">
-          <div class="card-content">
-            <h3>Bag</h3>
-            <form>
-                <label><input type="radio" name="glambag" checked> Anual R$42,90 / mês</label>
-                <label><input type="radio" name="glambag"> Semestral R$48,90 / mês</label>
-                <label><input type="radio" name="glambag"> Mensal R$53,90 / mês</label>
-            </form>
-            <ul>
-                <li>• Todo mês uma bag temática com 3 a 4 produtos com valor +R$100</li>
-                <li>• Ganhe 60 beautypoints ao assinar</li>
-            </ul>
-            <button onclick="showDetails('glambag')">Detalhes do plano</button>
-            <button class="subscribe-button">Quero assinar a beautybag</button>
+      <div class="itens-carrosel">
+        <div class="item">
+          <div class="tile sub-card border-combo">
+            <div class="sub-card">
+              <h2 class="sub-card-titulo"> Beautycombo </h2>
+            </div>
+            <div class="sub-card-combo">
+              <img class="sub-card__img" src="Photos/combo.png">
+            </div>
+            <div class="sub-card-container">
+              <h3 class="sub-card-container-titulo"> Escolha sua recorrência </h3>
+              <div class="sub-card-container-opcao border-combo">
+                <div class="sub-card-container-seletor-ctn">
+                  <input type="radio" id="combo-mensal" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                  <label class="radio" for="combo-mensal"></label>
+                  <p class="sub-card-container-recorrencia"> Mensal </p>
+                </div>
+                <div class="sub-card-container-precos-ctn">
+                  <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                  <span class="sub-card-container-valor-ctn">148,80</span>
+                  <span class="sub-card-container-mes-ctn"> / mês </span>
+                </div>
+
+              </div>
+              <div class="sub-card-container-opcao border-combo">
+                <div class="sub-card-container-seletor-ctn">
+                  <input type="radio" id="combo-semestral" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                  <label class="radio" for="combo-semestral"></label>
+                  <p class="sub-card-container-recorrencia"> Semestral </p>
+                </div>
+                <div class="sub-card-container-precos-ctn">
+                  <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                  <span class="sub-card-container-valor-ctn">138,80</span>
+                  <span class="sub-card-container-mes-ctn"> / mês </span>
+                </div>
+
+              </div>
+
+              <div class="sub-card-container-opcao border-combo">
+                <div class="sub-card-container-seletor-ctn">
+                  <input type="radio" id="combo-anual" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                  <label class="radio" for="combo-anual"></label>
+                  <p class="sub-card-container-recorrencia"> Anual </p>
+                </div>
+                <div class="sub-card-container-precos-ctn">
+                  <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                  <span class="sub-card-container-valor-ctn">122,80</span>
+                  <span class="sub-card-container-mes-ctn"> / mês </span>
+                </div>
+
+              </div>
+              
+            </div>
+            <div class="sub-card-benficios-container">
+                <ul>
+                    <li>• Todo mês uma box e bag temática com 8 a 11 produtos com valor +R$340</li>
+                    <li>• Ganhe 100 beautypoints ao assinar</li>
+                </ul>
+            </div>
+            <div class="sub-card-botoes-container">
+              <button class="button button--white-soft-pink button--full button--rounded" type="button">Detalhes do plano</button>
+              <button class="button button--full button--rounded button--soft-pink" type="button">Quero assinar a glamcombo</button>
+            </div>
           </div>
         </div>
-    
-        <div class="card">
-          <img src="Photos/pass.png" alt="Imagem 4">
-          <div class="card-content">
-            <h3>Pass</h3>
-            <form>
-                <label><input type="radio" name="glampass" checked> Mensal R$14,90 / mês</label>
-                <label><input type="radio" name="glampass"> Semestral R$12,90 / mês</label>
-                <label><input type="radio" name="glampass"> Anual R$9,90 / mês</label>
-            </form>
-            <ul>
-                <li>• Acesso a todos os benefícios do clube</li>
-                <li>• Opção de comprar a parte box, bag ou combo</li>
-                <li>• Ganhe 10 beautypoints ao assinar</li>
-            </ul>
-            <button onclick="showDetails('glampass')">Detalhes do plano</button>
-            <button class="subscribe-button">Quero assinar a beautypass</button>
-          </div>
+        <div class="item">
+            <div class="tile sub-card border-combo">
+                <div class="sub-card">
+                    <h2 class="sub-card-titulo"> Beautybox </h2>
+                </div>
+                <div class="sub-card-box">
+                    <img class="sub-card__img" src="Photos/box.png">
+                </div>
+                <div class="sub-card-container">
+                    <h3 class="sub-card-container-titulo"> Escolha sua recorrência </h3>
+                    <div class="sub-card-container-opcao border-combo">
+                        <div class="sub-card-container-seletor-ctn">
+                          <input type="radio" id="combo-mensal" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                          <label class="radio" for="combo-mensal"></label>
+                          <p class="sub-card-container-recorrencia"> Mensal </p>
+                        </div>
+                        <div class="sub-card-container-precos-ctn">
+                          <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                          <span class="sub-card-container-valor-ctn">94,90</span>
+                          <span class="sub-card-container-mes-ctn"> / mês </span>
+                        </div>
+        
+                      </div>
+                      <div class="sub-card-container-opcao border-combo">
+                        <div class="sub-card-container-seletor-ctn">
+                          <input type="radio" id="combo-semestral" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                          <label class="radio" for="combo-semestral"></label>
+                          <p class="sub-card-container-recorrencia"> Semestral </p>
+                        </div>
+                        <div class="sub-card-container-precos-ctn">
+                          <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                          <span class="sub-card-container-valor-ctn">89,90</span>
+                          <span class="sub-card-container-mes-ctn"> / mês </span>
+                        </div>
+        
+                      </div>
+        
+                      <div class="sub-card-container-opcao border-combo">
+                        <div class="sub-card-container-seletor-ctn">
+                          <input type="radio" id="combo-anual" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                          <label class="radio" for="combo-anual"></label>
+                          <p class="sub-card-container-recorrencia"> Anual </p>
+                        </div>
+                        <div class="sub-card-container-precos-ctn">
+                          <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                          <span class="sub-card-container-valor-ctn">79,90</span>
+                          <span class="sub-card-container-mes-ctn"> / mês </span>
+                        </div>
+        
+                      </div>
+                </div>
+                <div class="sub-card-benficios-container">
+                    <ul>
+                        <li>• Todo mês uma box temática com 5 a 7 produtos com valor +R$240</li>
+                        <li>• Ganhe 75 beautypoints ao assinar</li>
+                    </ul>
+                </div>
+                <div class="sub-card-botoes-container">
+                    <button class="button button--white-soft-pink button--full button--rounded" type="button">Detalhes do plano</button>
+                    <button class="button button--full button--rounded button--soft-pink" type="button">Quero assinar a glambox</button>
+                </div>
+            </div>
         </div>
-      
-        <!-- Adicione mais cards conforme necessário -->
-    </div>    
+
+        <div class="item">
+            <div class="tile sub-card border-combo">
+                <div class="sub-card">
+                    <h2 class="sub-card-titulo"> Beautybag </h2>
+                </div>
+                <div class="sub-card-box">
+                    <img class="sub-card__img" src="Photos/bag.png">
+                </div>
+                <div class="sub-card-container">
+                    <h3 class="sub-card-container-titulo"> Escolha sua recorrência </h3>
+                    <div class="sub-card-container-opcao border-combo">
+                        <div class="sub-card-container-seletor-ctn">
+                          <input type="radio" id="combo-mensal" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                          <label class="radio" for="combo-mensal"></label>
+                          <p class="sub-card-container-recorrencia"> Mensal </p>
+                        </div>
+                        <div class="sub-card-container-precos-ctn">
+                          <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                          <span class="sub-card-container-valor-ctn">53,90</span>
+                          <span class="sub-card-container-mes-ctn"> / mês </span>
+                        </div>
+        
+                      </div>
+                      <div class="sub-card-container-opcao border-combo">
+                        <div class="sub-card-container-seletor-ctn">
+                          <input type="radio" id="combo-semestral" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                          <label class="radio" for="combo-semestral"></label>
+                          <p class="sub-card-container-recorrencia"> Semestral </p>
+                        </div>
+                        <div class="sub-card-container-precos-ctn">
+                          <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                          <span class="sub-card-container-valor-ctn">48,90</span>
+                          <span class="sub-card-container-mes-ctn"> / mês </span>
+                        </div>
+        
+                      </div>
+        
+                      <div class="sub-card-container-opcao border-combo">
+                        <div class="sub-card-container-seletor-ctn">
+                          <input type="radio" id="combo-anual" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                          <label class="radio" for="combo-anual"></label>
+                          <p class="sub-card-container-recorrencia"> Anual </p>
+                        </div>
+                        <div class="sub-card-container-precos-ctn">
+                          <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                          <span class="sub-card-container-valor-ctn">42,90</span>
+                          <span class="sub-card-container-mes-ctn"> / mês </span>
+                        </div>
+        
+                      </div>
+                </div>
+                <div class="sub-card-benficios-container">
+                    <ul>
+                        <li>• Todo mês uma bag temática com 3 a 4 produtos com valor +R$100</li>
+                        <li>• Ganhe 60 beautypoints ao assinar</li>
+                    </ul>
+                </div>
+                <div class="sub-card-botoes-container">
+                    <button class="button button--white-soft-pink button--full button--rounded" type="button">Detalhes do plano</button>
+                    <button class="button button--full button--rounded button--soft-pink" type="button">Quero assinar a glambox</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="tile sub-card border-combo">
+                <div class="sub-card">
+                    <h2 class="sub-card-titulo"> Beautypass </h2>
+                </div>
+                <div class="sub-card-box">
+                    <img class="sub-card__img" src="Photos/pass.png">
+                </div>
+                <div class="sub-card-container">
+                    <h3 class="sub-card-container-titulo"> Escolha sua recorrência </h3>
+                    <div class="sub-card-container-opcao border-combo">
+                        <div class="sub-card-container-seletor-ctn">
+                          <input type="radio" id="combo-mensal" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                          <label class="radio" for="combo-mensal"></label>
+                          <p class="sub-card-container-recorrencia"> Mensal </p>
+                        </div>
+                        <div class="sub-card-container-precos-ctn">
+                          <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                          <span class="sub-card-container-valor-ctn">34,90</span>
+                          <span class="sub-card-container-mes-ctn"> / mês </span>
+                        </div>
+        
+                      </div>
+                      <div class="sub-card-container-opcao border-combo">
+                        <div class="sub-card-container-seletor-ctn">
+                          <input type="radio" id="combo-semestral" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                          <label class="radio" for="combo-semestral"></label>
+                          <p class="sub-card-container-recorrencia"> Semestral </p>
+                        </div>
+                        <div class="sub-card-container-precos-ctn">
+                          <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                          <span class="sub-card-container-valor-ctn">29,90</span>
+                          <span class="sub-card-container-mes-ctn"> / mês </span>
+                        </div>
+        
+                      </div>
+        
+                      <div class="sub-card-container-opcao border-combo">
+                        <div class="sub-card-container-seletor-ctn">
+                          <input type="radio" id="combo-anual" name="combo-plan" class="ng-untouched ng-pristine ng-valid">
+                          <label class="radio" for="combo-anual"></label>
+                          <p class="sub-card-container-recorrencia"> Anual </p>
+                        </div>
+                        <div class="sub-card-container-precos-ctn">
+                          <sup class="sub-card-container-precos-ctn__sup">R$ </sup>
+                          <span class="sub-card-container-valor-ctn">24,90</span>
+                          <span class="sub-card-container-mes-ctn"> / mês </span>
+                        </div>
+        
+                      </div>
+                </div>
+                <div class="sub-card-benficios-container">
+                    <ul>
+                        <li>• Opção de comprar a parte box, bag ou combo</li>
+                        <li>• Ganhe 10 beautypoints ao assinar</li>
+                    </ul>
+                </div>
+                <div class="sub-card-botoes-container">
+                    <button class="button button--white-soft-pink button--full button--rounded" type="button">Detalhes do plano</button>
+                    <button class="button button--full button--rounded button--soft-pink" type="button">Quero assinar a glambox</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <button class="slider-left-button"><img src="Photos/seta-esquerda.svg" alt=""></button>
+    <button class="slider-right-button"><img src="Photos/seta-direita.svg" alt=""></button>
+  </div>
 
     <section class="about-us" id="about-us">
         <h2 style="text-align: center;">Sobre Nós</h2>
