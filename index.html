@@ -10,6 +10,17 @@
     <script defer src="Scripts/slider.js"></script>
     <script defer src="Scripts/dropdown.js"></script>
     <script defer src="Scripts/cardSlider.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+    
 
 </head>
 <body>
@@ -19,11 +30,11 @@
             <button class="hamburguer"></button>
             <ul class="nav-list">
                 <li><a href="#home">Início</a></li>
-                <li><a href="#plans">Planos</a></li>
+                <li><a href="#carousel">Planos</a></li>
                 <li><a href="products.html">Produtos</a></li>
                 <li><a href="brands.html">Marcas</a></li>
                 <li><a href="#about-us">Sobre Nós</a></li>
-                <li><a href="#contacts">Contato</a></li>
+                <li><a href="#contact">Contato</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
@@ -130,7 +141,7 @@
     </section>
 
     <div class="container3">
-        <section class="planos">
+        <section class="planos" id="entenda">
             <h2>Entenda nossas assinaturas</h2>
             <div class="imagens">
                 <div class="dropdown">
@@ -267,7 +278,7 @@
                 </ul>
             </div>
             <div class="sub-card-botoes-container">
-              <button class="button button--white-soft-pink button--full button--rounded" type="button">Detalhes do plano</button>
+              <button class="button button--white-soft-pink button--full button--rounded" type="button" onclick="scrollToSection('entenda')">Detalhes do plano</button>
               <button class="button button--full button--rounded button--soft-pink" type="button">Quero assinar a glamcombo</button>
             </div>
           </div>
@@ -330,7 +341,7 @@
                     </ul>
                 </div>
                 <div class="sub-card-botoes-container">
-                    <button class="button button--white-soft-pink button--full button--rounded" type="button">Detalhes do plano</button>
+                    <button class="button button--white-soft-pink button--full button--rounded" type="button" onclick="scrollToSection('entenda')">Detalhes do plano</button>
                     <button class="button button--full button--rounded button--soft-pink" type="button">Quero assinar a glambox</button>
                 </div>
             </div>
@@ -394,7 +405,7 @@
                     </ul>
                 </div>
                 <div class="sub-card-botoes-container">
-                    <button class="button button--white-soft-pink button--full button--rounded" type="button">Detalhes do plano</button>
+                    <button class="button button--white-soft-pink button--full button--rounded" type="button" onclick="scrollToSection('entenda')">Detalhes do plano</button>
                     <button class="button button--full button--rounded button--soft-pink" type="button">Quero assinar a glambox</button>
                 </div>
             </div>
@@ -458,7 +469,7 @@
                     </ul>
                 </div>
                 <div class="sub-card-botoes-container">
-                    <button class="button button--white-soft-pink button--full button--rounded" type="button">Detalhes do plano</button>
+                    <button class="button button--white-soft-pink button--full button--rounded" type="button" onclick="scrollToSection('entenda')">Detalhes do plano</button>
                     <button class="button button--full button--rounded button--soft-pink" type="button">Quero assinar a glambox</button>
                 </div>
             </div>
