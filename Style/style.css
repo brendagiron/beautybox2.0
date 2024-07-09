@@ -13,6 +13,11 @@ a {
 .header {
     background: #ffc0cb;
     padding-inline: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .nav {
@@ -507,6 +512,8 @@ section.slider {
     padding: 10px;
     background-color: #f0f0f0;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
   }
   
   .titulo {
@@ -525,6 +532,7 @@ section.slider {
   .itens-carrosel {
     display: flex;
     transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0s;
+    justify-content: space-between;
   }
   
   .item {
@@ -760,6 +768,14 @@ section.slider {
 .about-us .img img {
     max-width: 100%;
     border-radius: 8px;
+}
+
+.img img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.img img:hover {
+    transform: scale(1.2);
 }
 
 .content-box {
