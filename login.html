@@ -12,6 +12,24 @@
     <script defer src="Scripts/cardSlider.js"></script>
 
 </head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+
+        smoothScrollLinks.forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+
 <body>
     <header class="header">
         <nav class="nav">
@@ -19,17 +37,17 @@
             <button class="hamburguer"></button>
             <ul class="nav-list">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="index.html">Planos</a></li>
+                <li><a href="index.html#carousel">Planos</a></li>
                 <li><a href="products.html">Produtos</a></li>
                 <li><a href="brands.html">Marcas</a></li>
-                <li><a href="index.html">Sobre Nós</a></li>
-                <li><a href="index.html">Contato</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="index.html#about-us">Sobre Nós</a></li>
+                <li><a href="index.html#contact">Contato</a></li>
+                <li><a href="#home">Login</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="login-container">
+    <main class="login-container" id="home">
         <form action="">
             <h3>Login</h3>
             <div class="input-field">
