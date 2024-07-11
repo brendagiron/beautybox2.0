@@ -25,15 +25,18 @@ git clone https://github.com/brendagiron/beautyboxx.git
 <h2 align="center">Como Contribuir</h2>
 <p align="center">
 1. Faça um fork do projeto
-  
-2. Crie uma nova branch (git checkout -b feature/nova-funcionalidade)
-  
+</p>
+<p align="center">
+ 2. Crie uma nova branch (git checkout -b feature/nova-funcionalidade)
+</p>
+<p align="center">
 3. Commit suas mudanças (git commit -am 'Adiciona nova funcionalidade')
-  
+</p>
+<p align="center">
 4. Faça push para a branch (git push origin feature/nova-funcionalidade)
-  
+</p>
+<p align="center">
 5. Crie um novo Pull Request
-it
 </p>
 
 <h2 align="center">Licença</h2>
