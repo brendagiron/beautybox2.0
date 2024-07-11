@@ -1,1 +1,2 @@
-# beautybox2.0
+<h1 align="center">BeautyBox</h1>
+
