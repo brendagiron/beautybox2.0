@@ -16,9 +16,11 @@
 
 <h2 align="center">Como Rodar o Projeto</h2>
 
-# Clone este repositório
-$ git clone https://github.com/brendagiron/beautyboxx.git
-# Abra o arquivo index.html em seu navegador
+<h3 align="center">Clone este repositório</h3>
+<p align="center">
+git clone https://github.com/brendagiron/beautyboxx.git
+</p>
+<h3 align="center">Abra o arquivo index.html em seu navegador</h3>
 
 <h2 align="center">Como Contribuir</h2>
 1.Faça um fork do projeto
