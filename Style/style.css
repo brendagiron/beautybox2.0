@@ -73,6 +73,7 @@ a {
     .hamburguer {
         display: block;
         z-index: 1;
+        width: 15%;
     }
     .nav-list {
         position: fixed;
