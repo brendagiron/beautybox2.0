@@ -15,7 +15,7 @@
 </p>
 
 <h2 align="center">Como Rodar o Projeto</h2>
-```bash
+
 # Clone este repositório
 $ git clone https://github.com/brendagiron/beautyboxx.git
 # Abra o arquivo index.html em seu navegador
