@@ -7,6 +7,8 @@
     <title>Beauty | Unhas</title>
     <link rel="stylesheet" type="text/css" href="Style/style.css" />
     <link rel="icon" href="Photos/logob.png" />
+    <script defer src="Scripts/backtotop.js"></script>
+    <script defer src="Scripts/search.js"></script>
 </head>
 
 <script>
@@ -41,7 +43,22 @@
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
+
     </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="search-container">
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Pesquisar por produto...">
+            <button type="submit">Pesquisar</button>
+            <button type="button" id="clearButton">Limpar</button>
+        </form>
+    </div>
 
     <br>
     <br>
@@ -601,6 +618,6 @@
 
 <script src="Scripts/mobileNavbar.js"></script> 
     
-        
+<button onclick="topFunction()" id="backToTopBtn" title="Voltar ao Topo">↑</button>        
 </body>
 <html>
