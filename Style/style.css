@@ -976,7 +976,6 @@ footer .container ul li a {
     width: 220px;
     margin: 16px;
     vertical-align: top;
-    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
@@ -1039,7 +1038,7 @@ footer .container ul li a {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%;
+    width: 50%;
     margin-top: 8px;
 }
 
@@ -1058,6 +1057,54 @@ footer .container ul li a {
 
 }
 /*END PÁGINA DE PRODUTOS*/
+
+/*BARRA DE PESQUISA*/
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container form {
+    display: inline-block;
+}
+
+.search-container input[type="text"],
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-container button {
+    background-color: #FF91AF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+@keyframes highlight {
+    0% { background-color: lightgray; }
+    100% { background-color: initial; }
+}
+
+.highlight {
+    animation: highlight 1.5s ease-out;
+}
+/*END BARRA DE PESQUISA*/
+
 
 
 /*PÁGINA DE MARCAS*/
@@ -1214,49 +1261,3 @@ footer .container ul li a {
 }
 /*END BOTÃO DE VOLTAR*/
 
-/*BARRA DE PESQUISA*/
-.search-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.search-container form {
-    display: inline-block;
-}
-
-.search-container input[type="text"],
-.search-container button {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 5px;
-}
-
-.search-container button {
-    background-color: #c678db;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.search-container button:hover {
-    background-color: #45a049;
-}
-
-.products-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-
-@keyframes highlight {
-    0% { background-color: lightgray; }
-    100% { background-color: initial; }
-}
-
-.highlight {
-    animation: highlight 1.5s ease-out;
-}
-/*END BARRA DE PESQUISA*/
